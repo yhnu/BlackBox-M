@@ -1,13 +1,13 @@
 ![xx](assets/banner.png)
 
-# 虚拟引擎 · PolarBox
+# 虚拟引擎 · BlackBox-M
 > 人间太市绘，不如山中做妖怪！
 >
 > <p align="right">——SIYU</p>
 
 ![](https://img.shields.io/badge/language-java-brightgreen.svg)
 
-PolarBox，是一款虚拟引擎，可以在Android上克隆、运行虚拟应用，拥有免安装运行能力。PolarBox可以掌控被运行的虚拟应用，做任何想做的事情。
+BlackBox-M，是一款虚拟引擎，可以在Android上克隆、运行虚拟应用，拥有免安装运行能力。PolarBox可以掌控被运行的虚拟应用，做任何想做的事情。
 
 ## 支持
 目前已兼容 5.0 ～ 12.0并跟进后续新系统。
@@ -43,7 +43,7 @@ PolarBox，是一款虚拟引擎，可以在Android上克隆、运行虚拟应�
     }
 ```
 
-### Step 2.安装应用至PolarBox内
+### Step 2.安装应用至BlackBox-M内
 ```java
     // 已安装的应用可以提供包名
     BlackBoxCore.get().installPackageAsUser("com.tencent.mm", userId);
@@ -52,7 +52,7 @@ PolarBox，是一款虚拟引擎，可以在Android上克隆、运行虚拟应�
     BlackBoxCore.get().installPackageAsUser(new File("/sdcard/com.tencent.mm.apk"), userId);
 ```
 
-### Step 2.运行NewBox内的应用
+### Step 2.运行BlackBox-M内的应用
 ```java
    BlackBoxCore.get().launchApk("com.tencent.mm", userId);
 ```
@@ -111,7 +111,7 @@ PolarBox，是一款虚拟引擎，可以在Android上克隆、运行虚拟应�
 ### License
 
 > ```
-> Copyright 2022 PolarBox
+> Copyright 2022 BlackBox-M
 >
 > Licensed under the Apache License, Version 2.0 (the "License");
 > you may not use this file except in compliance with the License.
