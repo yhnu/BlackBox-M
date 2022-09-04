@@ -100,7 +100,7 @@ BlackBox-M，是一款虚拟引擎，可以在Android上克隆、运行虚拟应
 
 ### 应用分2个模块
 - app模块，用户操作与UI模块
-- Bcore模块，此模块为NewBox的核心模块，负责完成整个NewBox的调度。
+- Bcore模块，此模块为NewBox的核心模块，负责完成整个BlackBox-M的调度。
 
 
 ## 感谢
