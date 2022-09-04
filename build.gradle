@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.7.10'
+    ext.ktx_version = '1.8.0'
+//    ext.kotlin_version = "1.4.31"
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+        maven { url 'https://jitpack.io' }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+        maven { url 'https://jitpack.io' }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+ext {
+    minSdkVersion = 21
+    compileSdkVersion = 30
+    buildToolsVersion = "30.0.3"
+    targetSdkVersion = 30
+    abiFilters = "armeabi-v7a,arm64-v8a"
+
+    ndkVersion = "23.1.7779620"
+    cmakeVersion = "3.18.1"
+
+    versionName = '1.0'
+    versionCode = 1
+    useASAN = false
+
+    xVersion = '1.1.0'
+    blackReflection = '1.1.2'
+
+}
